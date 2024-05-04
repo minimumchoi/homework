@@ -6,10 +6,10 @@
 
 #### avatars 클래스
 
-- **width/heigth 값**
+- **width/heigth 값** <br/>
 avatars 클래스에는 사진 4장(각 64px/총 256px)과 이미지 간격(각 20px/ 총 60px)을 더해 width값을 316px으로 지정해주었고 사진 2장 (각 64px/총 128px)과 이미지 간격(각 20px/ 총 20px)을 더해 height값을 148px으로 지정해주었습니다.
 
-- **화면 가운데 정렬**
+- **화면 가운데 정렬** <br/>
 position속성을 absolute로 지정하였고 top과 left을 50%로 지정하여 가운데 정렬하였으며 width값과 height값을 transform: translate 속성으로 정중앙으로 가게끔 하였습니다
 
 #### float 속성
@@ -18,7 +18,7 @@ position속성을 absolute로 지정하였고 top과 left을 50%로 지정하여
 - woman클래스에는 margin-bottom을 주어 man클래스와의 간격을 20px만큼 띄웠습니다
 
 #### nth-child 가상선택자
-nth-child 가상선택자를 사용하여 woman클래스와 man클래스의 두번째 선택자부터 margin-left속성이 들어가게 하여 두번째-네번째 사진 왼쪽에만 여백이 20px이 들어가게끔 하였습니다 
+- nth-child 가상선택자를 사용하여 woman클래스와 man클래스의 두번째 선택자부터 margin-left속성이 들어가게 하여 두번째-네번째 사진 왼쪽에만 여백이 20px이 들어가게끔 하였습니다 
 
 #### supports 
 - supports를 사용하여 flex속성을 지원하는 브라우저에서는
