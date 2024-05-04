@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.avatars{
+  width: 316px;
+  height: 148px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.woman, .man {
+  float: left;
+}
+
+.woman{
+  margin-bottom: 20px;
+}
+
+.woman:nth-child(n+2), .man:nth-child(n+2){
+  margin-left: 20px;
+}
+
+
+
+/* @supports (display: flex) {
+  .woman-group, .man-group{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.woman:nth-child(n+2), .man:nth-child(n+2){
+  margin-left: 0px;
+}
+
+} */
