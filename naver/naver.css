@@ -1,0 +1,217 @@
+.sr-only{
+  position: absolute;
+  /* 
+  width와 height 속성의 논리속성
+  inline-size: 1px;
+  block-size: 1px; 
+  */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:root{
+  font-size: 16px;
+  color: #181818;
+  margin: 0;
+}
+
+@media(max-width:768px){
+  :root{
+    font-size: 16px;
+    color: #181818;
+  }
+ 
+  .logo{
+    width: 14.375rem;
+    margin: 8rem auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+
+  }
+ .login-wrapper{
+  margin: 0 1.25rem;
+
+  fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+
+    input{
+      height: 2.8125rem;
+      font-size: 0.875rem;
+      border: 0.1rem solid #dadada;
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+    }
+
+    input:focus{
+      outline: 0.0625rem solid #03cf5d;
+      background-color:  #e9f0fd;
+      border-radius: 0.1rem;
+    }
+
+    button{
+      height: 2.8125rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #02cf5d;
+      border: none;
+      margin-top: 1.25rem;
+    }
+  }
+ }
+ .login-security-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 0.625rem;
+  justify-content: right;
+  
+  .login-state{
+    margin-top: 0.625rem;
+    position: relative;
+
+    input{
+      position: absolute;
+      margin: 0;
+      margin-right: 0.3125rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      appearance: none;
+    }
+
+    label{
+      background: url(/icons/unchecked.svg) no-repeat 0 0/contain;
+      padding-left: 1.8125rem;
+    }
+    input:checked + label{
+      background-image: url(/icons/checked.svg);
+    }
+    input:focus-visible{
+      outline: 0.0625rem solid #24388d;
+    }
+  
+  }
+  .ipsecurity-container{
+    display: none;
+  }
+ 
+}
+
+
+}
+
+
+@media(min-width:768px){
+  :root{
+    font-size: 16px;
+    color: #181818;
+  }
+ 
+  .logo{
+    width: 14.375rem;
+    margin: 8rem auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+
+  }
+ .login-wrapper{
+  margin: 0 auto;
+  width: 31.25rem;
+  box-sizing: border-box;
+  padding: 0 1.25rem;
+
+  fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+
+    input{
+      height: 2.8125rem;
+      font-size: 0.875rem;
+      border: 0.1rem solid #dadada;
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+    }
+
+    input:focus{
+      outline: 0.0625rem solid #03cf5d;
+      background-color:  #e9f0fd;
+      border-radius: 0.1rem;
+    }
+
+    button{
+      height: 2.8125rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #02cf5d;
+      border: none;
+      margin-top: 1.25rem;
+    }
+  }
+ }
+ .login-security-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 0.625rem;
+  justify-content: space-between;
+  
+  .login-state{
+    position: relative;
+    
+
+    input{
+      position: absolute;
+      margin: 0;
+      margin-right: 0.3125rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      appearance: none;
+    }
+
+    label{
+      background: url(/icons/unchecked.svg) no-repeat 0 0/contain;
+      padding-left: 1.8125rem;
+    }
+    input:checked + label{
+      background-image: url(/icons/checked.svg);
+    }
+    input:focus-visible{
+      outline: 0.0625rem solid #24388d;
+    }
+  
+  }
+  .ipsecurity-container{
+    a{
+      text-decoration: none;
+      color:#181818;
+    }
+    button{
+      background-color: transparent;
+      border: none;
+      padding: 0 0;
+      line-height: 1;
+      margin: 0;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #5e5d5d;
+    }
+    
+  }
+ 
+}
+
+
+}
